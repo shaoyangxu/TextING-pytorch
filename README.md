@@ -3,7 +3,7 @@ The code and dataset for ACL2020 paper [Every Document Owns Its Structure: Induc
 Graph Neural Networks](https://www.aclweb.org/anthology/2020.acl-main.31.pdf),implemented in Pytorch.
 Some functions are based on [TextGCN](https://github.com/yao8839836/text_gcn).Thank for their work.
 The original code implemented in Tensorflow is [TextING](https://github.com/CRIPAC-DIG/TextING).Thank for their work too.
-# some comprehensions by myself
+# Comprehensions
 [Every Document Owns Its Structure: Inductive Text Classification via Graph Neural Networks论文理解](https://blog.csdn.net/jokerxsy/article/details/113756400)
 # Requirements
 - Python 3.6+
@@ -24,6 +24,10 @@ python train.py [--dataset DATASET] [--learning_rate LR]
                 [--hidden HIDDEN] [--steps STEPS]
                 [--dropout DROPOUT] [--weight_decay WD]
 ```
-To reproduce the result, large hidden size and batch size are suggested as long as your memory allows. We report our result based on 96 hidden size with 1 batch. For the sake of memory efficiency, you may change according to your hardware.
+To reproduce the result, large hidden size and batch size are suggested as long as your memory allows. We report our result based on 96 hidden size with 1 batch. For the sake of memory efficiency, you may change according to your hardware.Program uses cpu by default.
 
+# Reproduced Results
+|1|2|
+|-|-|
+|2|2|
 Thank [TextING](https://github.com/CRIPAC-DIG/TextING) again~
