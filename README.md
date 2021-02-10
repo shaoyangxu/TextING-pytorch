@@ -36,7 +36,7 @@ To reproduce the result, large hidden size and batch size are suggested as long 
 
 # Reproduced Results
 ||MR|R8|R52|Ohsumed|
-|-|-|-|-|
+|-|-|-|-|-|
 |-|0.96345|-|-|
 
 
