@@ -157,7 +157,7 @@ logger.info(metrics.precision_recall_fscore_support(labels, preds, average='macr
 logger.info("Micro average Test Precision, Recall and F1-Score...")
 logger.info(metrics.precision_recall_fscore_support(labels, preds, average='micro'))
 
-'''
+''' 
 # For visualization
 doc_vectors = []
 for i in range(len(test_doc_embeddings)):
