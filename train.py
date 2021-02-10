@@ -7,7 +7,7 @@ from sklearn import metrics
 from metrics import softmax_cross_entropy,accuracy
 from argparse import ArgumentParser
 from utils import *
-from models_pytorch import GNN
+from models import GNN
 import numpy as np
 import torch
 import torch.nn as nn
@@ -83,6 +83,7 @@ def evaluate(model, features, support, mask, labels):
     acc = accuracy(outputs, labels)
     duration = (time.time() - t_test)
     pred = torch.argmax(outputs,1)
+    labels = torch.argmax(labels,1)
     return cost, acc, duration, embeddings,pred, labels
 
 
