@@ -1,4 +1,4 @@
-# TextING-pytorch
+# Every Document Owns Its Structure: Inductive Text Classification via Graph Neural Networks in Pytorch
 The code and dataset for ACL2020 paper [Every Document Owns Its Structure: Inductive Text Classification via
 Graph Neural Networks](https://www.aclweb.org/anthology/2020.acl-main.31.pdf),implemented in Pytorch.
 Some functions are based on [TextGCN](https://github.com/yao8839836/text_gcn).Thank for their work.
