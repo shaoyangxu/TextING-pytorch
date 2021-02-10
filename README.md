@@ -15,6 +15,10 @@ Build graphs from the datasets in data/corpus/ as:
 ```python
 python build_graph.py [DATASET] [WINSIZE]
 ```
+Examples:
+```python
+python build_graph.py R8
+```
 Provided datasets include `mr`,`ohsumed`,`R8`and`R52`. The default sliding window size is 3.
 To use your own dataset, put the text file under `data/corpus/` and the label file under `data/` as other datasets do. Preprocess the text by running `remove_words.py` before building the graphs.
 Start training and inference as:
@@ -24,10 +28,16 @@ python train.py [--dataset DATASET] [--learning_rate LR]
                 [--hidden HIDDEN] [--steps STEPS]
                 [--dropout DROPOUT] [--weight_decay WD]
 ```
-To reproduce the result, large hidden size and batch size are suggested as long as your memory allows. We report our result based on 96 hidden size with 1 batch. For the sake of memory efficiency, you may change according to your hardware.Program uses cpu by default.
+Examples:
+```python
+python train.py --dataset R8
+```
+To reproduce the result, large hidden size and batch size are suggested as long as your memory allows. We report our result based on 96 hidden size with 1 batch. For the sake of memory efficiency, you may change according to your hardware. Program uses cpu by default.
 
 # Reproduced Results
-|1|2|
-|-|-|
-|2|2|
+||MR|R8|R52|Ohsumed|
+|-|-|-|-|
+|-|0.96345|-|-|
+
+
 Thank [TextING](https://github.com/CRIPAC-DIG/TextING) again~
